@@ -1,0 +1,483 @@
+/* font importing */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* intro */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --AZUL: #1b3c59;
+  --CINZA: #b0bfb5;
+  --PELE: #f2d5bb;
+  --ROSA: #f2a999;
+  --PINK: #f28177;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background: var(--PELE);
+}
+
+.content {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 80px;
+  color: var(--AZUL);
+  cursor: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: var(--AZUL);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--CINZA);
+}
+
+.content .header-block {
+  max-width: 1000px;
+  min-width: 300px;
+  height: 450px;
+  background: var(--ROSA);
+  border-radius: 8px;
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+}
+
+.header-block img {
+  width: 45%;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+}
+
+.header-block .text {
+  position: absolute;
+  bottom: 30%;
+  left: 15%;
+}
+
+.header-block .text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  color: var(--AZUL);
+  margin-bottom: 20px;
+  text-align: right;
+  transform: translateX(-20px);
+  transition: transform 0.5s;
+}
+
+.header-block .text p {
+  font-style: inherit;
+  max-width: 280px;
+  color: var(--AZUL);
+  text-align: right;
+  transform: translateX(-20px);
+  transition: transform 0.4s;
+}
+
+/* Nossos Produtos */
+
+section .catalogo {
+  width: 100vw;
+  padding: 100px;
+}
+
+.titulo-wrapper-catalogo p {
+  text-decoration: inherit;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  color: VAR(--AZUL);
+}
+.titulo-wrapper-catalogo {
+  margin-top: 200px;
+  padding-bottom: 5px;
+  text-decoration: inherit;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+section .card-wrapper {
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 30px;
+  padding-top: 20px;
+}
+
+section .card-item {
+  height: 400px;
+  background: var(--PELE);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-content {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--AZUL);
+}
+
+.card-item img {
+  width: 70%;
+}
+
+.card-item h4 {
+  width: 90%;
+}
+
+.card-item p {
+  width: 90%;
+  font-style: italic;
+  color: #00000990;
+}
+
+/* Biografia */
+section .biografia {
+  width: 100vw;
+  padding: 100px;
+}
+.titulo-wrapper-biografia p {
+  padding-bottom: 15px;
+  text-decoration: inherit;
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  color: var(--AZUL);
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.about-content {
+  max-width: 1000px;
+  min-width: 300px;
+  height: 600px;
+  background: var(--PINK);
+  margin: 0 auto;
+  border-radius: 10px;
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.foto {
+  width: 25%;
+  min-width: 300px;
+  height: 90%;
+  margin-top: 100px;
+  font-style: oblique;
+  /*border-radius: 10px;*/
+}
+
+.texto {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  font-style: italic;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5%;
+}
+
+.texto h3 {
+  text-align: center;
+  width: 90%;
+  margin-bottom: 20px;
+  font-style: oblique;
+  color: #000000bb;
+}
+
+.texto p {
+  max-width: 90%;
+  text-decoration: inherit;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #00000990;
+}
+
+/* Features */
+
+.outros {
+  width: 100%;
+  height: 100%;
+  background: var(--CINZA);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.titulo-novos-outros p {
+  text-decoration: inherit;
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  padding: 0px 0px;
+  color: var(--AZUL);
+}
+.titulo-novos-outros h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: inherit;
+  font-style: oblique;
+  font-size: 35px;
+  padding: 0px 0px;
+}
+
+.itens-caixa-bloco {
+  max-width: 1000px;
+  min-width: 300px;
+  height: 1000px;
+  background: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  z-index: 10;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-gap: 30px;
+}
+
+.itens-caixa-item {
+  max-width: 420px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #8b8a8a3b;
+  border-radius: 4px;
+}
+
+.itens-texto-conteudo {
+  max-width: 60%;
+  margin: 5px;
+  color: var(--AZUL);
+}
+
+.itens-texto-conteudo p {
+  color: #00000990;
+}
+
+.itens-caixa-item img {
+  width: 64px;
+  height: 64px;
+}
+
+/* Rodape */
+
+footer {
+  width: 100%;
+  height: 250px;
+}
+
+footer .rodape {
+  width: 100%;
+  height: 200px;
+  background: var(--AZUL);
+  padding: 20px 10px;
+}
+
+.footer-links {
+  max-width: 1000px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-compania,
+.footer-qualidade,
+.footer-contato,
+.footer-social {
+  color: white;
+  line-height: 100%;
+  min-height: 100px;
+}
+
+.footer-links h4 {
+  margin-bottom: 5px;
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+footer .last {
+  width: 100%;
+  height: 50px;
+  background: var(--ROSA);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social ul li {
+  list-style: none;
+  padding: 1px;
+  cursor: inherit;
+}
+.footer-social ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+  color: var(--CINZA);
+}
+
+/* Ajustes de Responsivo */
+
+@media (max-width: 576px) {
+  nav ul li {
+    display: none;
+  }
+
+  .header-block img {
+    width: 70%;
+    position: absolute;
+    right: 16%;
+    top: 30%;
+  }
+
+  .header-block .text {
+    position: absolute;
+    bottom: 10%;
+    left: 15;
+  }
+
+  section .filter-card {
+    width: 390px;
+    padding: 0px 10px;
+  }
+
+  /*
+  .search-input {
+    max-width: 700px;
+    min-width: 240px;
+  }
+
+  .search-button {
+    max-width: 150px;
+    min-width: 80px;
+  }*/
+
+  .about {
+    margin-top: 100px;
+  }
+
+  .title-wrapper-about {
+    margin-bottom: 20px;
+  }
+  .about-content {
+    flex-direction: column;
+    height: 100%;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    width: 90%;
+  }
+
+  .right p {
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+  }
+
+  .features {
+    height: 100%;
+  }
+
+  .feature-card-block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    height: 100%;
+  }
+
+  footer .main {
+    height: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    padding-left: 10%;
+  }
+}
