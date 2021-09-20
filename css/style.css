@@ -49,7 +49,7 @@ nav {
 }
 
 .brand {
-  font-size: 80px;
+  font-size: 70px;
   color: var(--AZUL);
   cursor: center;
 }
@@ -61,7 +61,9 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  padding: 10px;
+  padding: 15px;
+  margin-top: 40px;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -80,19 +82,16 @@ nav ul li a:hover {
   height: 450px;
   background: var(--ROSA);
   border-radius: 8px;
-  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 10;
   padding: 10px;
 }
 
 .header-block img {
-  width: 45%;
+  width: 35%;
   position: absolute;
-  right: 2%;
-  bottom: 2%;
+  right: 5%;
+  bottom: 10%;
 }
 
 .header-block .text {
@@ -109,7 +108,6 @@ nav ul li a:hover {
   margin-bottom: 20px;
   text-align: right;
   transform: translateX(-20px);
-  transition: transform 0.5s;
 }
 
 .header-block .text p {
@@ -128,13 +126,13 @@ section .catalogo {
   padding: 100px;
 }
 
-.titulo-wrapper-catalogo p {
+.titulo-foto-catalogo p {
   text-decoration: inherit;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 50px;
   color: VAR(--AZUL);
 }
-.titulo-wrapper-catalogo {
+.titulo-foto-catalogo {
   margin-top: 200px;
   padding-bottom: 5px;
   text-decoration: inherit;
@@ -142,7 +140,7 @@ section .catalogo {
   font-size: 20px;
 }
 
-section .card-wrapper {
+section .caixa-foto {
   max-width: 1000px;
   height: 100%;
   display: grid;
@@ -151,7 +149,7 @@ section .card-wrapper {
   padding-top: 20px;
 }
 
-section .card-item {
+section .caixa-item {
   height: 400px;
   background: var(--PELE);
   border-radius: 10px;
@@ -161,7 +159,7 @@ section .card-item {
   justify-content: space-around;
 }
 
-.card-content {
+.caixa-conteudo {
   height: 30%;
   display: flex;
   flex-direction: column;
@@ -171,15 +169,15 @@ section .card-item {
   color: var(--AZUL);
 }
 
-.card-item img {
+.caixa-item img {
   width: 70%;
 }
 
-.card-item h4 {
+.caixa-item h4 {
   width: 90%;
 }
 
-.card-item p {
+.caixa-item p {
   width: 90%;
   font-style: italic;
   color: #00000990;
@@ -190,7 +188,7 @@ section .biografia {
   width: 100vw;
   padding: 100px;
 }
-.titulo-wrapper-biografia p {
+.titulo-foto-biografia p {
   padding-bottom: 15px;
   text-decoration: inherit;
   font-style: oblique;
@@ -199,7 +197,7 @@ section .biografia {
   color: var(--AZUL);
 }
 
-.about {
+.caixa {
   width: 100%;
   height: 100%;
   display: flex;
@@ -208,7 +206,7 @@ section .biografia {
   padding: 50px 10px;
 }
 
-.about-content {
+.caixa-coco {
   max-width: 1000px;
   min-width: 300px;
   height: 600px;
@@ -229,13 +227,13 @@ section .biografia {
   height: 90%;
   margin-top: 100px;
   font-style: oblique;
-  /*border-radius: 10px;*/
 }
 
 .texto {
   width: 70%;
   height: 100%;
   display: flex;
+  font-size: 17px;
   font-style: italic;
   flex-direction: column;
   align-items: center;
@@ -263,7 +261,7 @@ section .biografia {
 
 /* Features */
 
-.outros {
+.nossosprodutos {
   width: 100%;
   height: 100%;
   background: var(--CINZA);
@@ -369,7 +367,7 @@ footer .rodape {
   margin-bottom: 8px;
 }
 
-footer .last {
+footer .ultimo {
   width: 100%;
   height: 50px;
   background: var(--ROSA);
@@ -396,88 +394,4 @@ footer .last {
 
 .footer-social ul li a:hover {
   color: var(--CINZA);
-}
-
-/* Ajustes de Responsivo */
-
-@media (max-width: 576px) {
-  nav ul li {
-    display: none;
-  }
-
-  .header-block img {
-    width: 70%;
-    position: absolute;
-    right: 16%;
-    top: 30%;
-  }
-
-  .header-block .text {
-    position: absolute;
-    bottom: 10%;
-    left: 15;
-  }
-
-  section .filter-card {
-    width: 390px;
-    padding: 0px 10px;
-  }
-
-  /*
-  .search-input {
-    max-width: 700px;
-    min-width: 240px;
-  }
-
-  .search-button {
-    max-width: 150px;
-    min-width: 80px;
-  }*/
-
-  .about {
-    margin-top: 100px;
-  }
-
-  .title-wrapper-about {
-    margin-bottom: 20px;
-  }
-  .about-content {
-    flex-direction: column;
-    height: 100%;
-  }
-  .left {
-    display: none;
-  }
-  .right {
-    width: 90%;
-  }
-
-  .right p {
-    width: 100%;
-    margin: 0px;
-    text-align: left;
-  }
-
-  .features {
-    height: 100%;
-  }
-
-  .feature-card-block {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer {
-    height: 100%;
-  }
-
-  footer .main {
-    height: 100%;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    padding-left: 10%;
-  }
 }
